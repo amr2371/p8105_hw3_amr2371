@@ -110,7 +110,7 @@ accel <- read.csv("./accel_data.csv") %>%
          day = forcats::fct_relevel(day, "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"),
          type_of_day = ifelse(day == "Saturday" | day == "Sunday", "weekend", "weekday"))
 ```
-The dataset has `nrow(accel)` observations and `ncol(accel)` variables. The variables in the dataset are minute of the day, activity count, and day of the week.
+The dataset has `r nrow(accel)` observations and `r ncol(accel)` variables. The variables in the dataset are minute of the day, activity count, and day of the week.
 
 
 
